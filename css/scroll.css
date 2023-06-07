@@ -1,0 +1,22 @@
+.sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+
+}
+
+.sec:nth-child(even) {
+    background: #f7f7f7;
+}
+
+.sec h2 {
+    transform: translate(0, 100px);
+    opacity: 0;
+}
+
+.sec.on h2 {
+    transform: translate(0, 0);
+    opacity: 1;
+    transition: 0.5s;
+}
